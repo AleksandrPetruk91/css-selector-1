@@ -1,0 +1,175 @@
+Абстрактний кореневий батьківський тег HTML :root {
+  background: rgb(190, 120, 87);
+}
+
+html {
+  max-width: 720px;
+}
+
+body {
+  background: #ffffff;
+}
+
+#user {
+  color: red;
+}
+
+h1.button {
+  color: rgb(158, 119, 119);
+}
+
+* {
+  color: rgb(177, 64, 64);
+}
+
+h1,
+.box,
+#user {
+  color: red;
+}
+
+h1.box#user {
+  color: red;
+}
+
+.dox {
+  color: rgb(230, 106, 106);
+  background: #bcc7c6;
+}
+
+div.dox > p {
+  color: black;
+}
+
+section > .dox {
+  color: rgb(255, 255, 255);
+}
+
+.card-dark {
+  background: #ffffff;
+}
+
+.item:first-child {
+  color: blue;
+}
+
+.item:last-child {
+  color: rgb(113, 212, 127);
+}
+
+(Якщо тег один у списку дітей)
+.item:only-child {
+  color: rgb(113, 212, 127);
+}
+
+(Останній тег з видів)
+.item:last-of-type {
+  color: rgb(113, 212, 127);
+}
+
+(Для тегу який єдиний у свому роді)
+.item:only-of-type {
+  color: rgb(113, 212, 127);
+}
+
+(обираємо в якому порядку тег)
+.item:nth-child(6) {
+  color: blue;
+}
+
+(Парні теги)
+.item:nth-child(even) {
+  color: blue;
+}
+
+(Непарні теги)
+.item:nth-child(odd) {
+  color: blue;
+}
+*/ (парні теги) .item:nth-child(even) {
+  color: blue;
+}
+
+(Кожен третій тег, починаємо рахувати з другого)
+.item:nth-child(3n + 2) {
+  color: blue;
+}
+
+(Кожен другий тег але ділиться оп типам тегів)
+.item:nth-of-type(2n) {
+  color: aquamarine;
+}
+
+(Усі класи, окрім тегу 'р')
+.item:not(p) {
+  color: blue;
+}
+
+(Для пустого тегу типу <p></p>)
+div:empty {
+  height: 20px;
+  background: #33289b;
+}
+
+.input-dark {
+  background: #b97e9a;
+}
+
+.input-dark[required] {
+  background: #831f4d;
+}
+
+.input-dark[type='number'] {
+  background: #140d74;
+}
+
+(вибирає із списку атрибутів вказаний)
+.input-dark[rel~='external'] {
+  height: 30px;
+  background: #9ab819;
+}
+
+(атрибут починається з 'btn')
+button[class|='btn'] {
+  background: red;
+}
+
+(атрибут починається з 'btn')
+button[class^='btn'] {
+  background: rgb(116, 30, 30);
+}
+
+('btn' будь-де в значенні атрибута)
+button[class*='btn'] {
+  background: rgb(189, 171, 171);
+}
+
+(атрибут закінчується на 'btn')
+button[class$='btn'] {
+  background: rgb(87, 141, 51);
+}
+
+(перша літера)
+.btn::first-letter {
+  color: blue;
+}
+
+(Перший рядок)
+.birmix::first-line {
+  color: rgb(52, 219, 46);
+}
+
+(для інпута)
+.input-dark::placeholder {
+  color: rgb(36, 150, 93);
+}
+*/ (Вставляє контент перед основним текстом) p::before {
+  content: '^^^';
+  color: blueviolet;
+}
+
+(Вставляє контент після тексту)
+p::before {
+  content: '^^^';
+  color: blueviolet;
+}

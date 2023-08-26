@@ -1,0 +1,147 @@
+:root {
+  background: rgb(255, 255, 255);
+}
+
+* {
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+#blue {
+  color: blue;
+}
+
+.box > p {
+  color: red;
+}
+
+.box > div {
+  color: blue;
+}
+
+.brown {
+  color: white;
+  background: brown;
+}
+
+ul > li {
+  background: red;
+}
+
+.header-button + span {
+  background: red;
+}
+
+.susid ~ p {
+  color: white;
+  background: blue;
+}
+
+.salo,
+#bread {
+  background: yellow;
+}
+
+.first-task li:first-child {
+  color: white;
+}
+
+.second-task > ul:first-child > li:first-child {
+  color: white;
+}
+
+.third-task > ul + ul > li:first-child {
+  background: yellow;
+}
+
+.four-task > ul > li:last-child {
+  background: yellow;
+}
+
+.five-task > ul:last-child > li:last-child {
+  color: white;
+}
+
+.only-child-task > div:only-child {
+  color: red;
+}
+
+.seven-task > p:first-of-type {
+  background: red;
+}
+
+.eight-task > p:last-of-type {
+  background: red;
+}
+
+.text-wrapper > p:only-of-type {
+  background: yellow;
+}
+
+.lesson-three-task-one a[href] {
+  color: #ffffff;
+}
+
+.lesson-three-task-two li[value] {
+  color: yellow;
+}
+
+.lesson-three-task-three li[value='3'] {
+  background: red;
+}
+
+.lesson-three-task-four button[class~='primary'] {
+  background: blue;
+}
+
+.lesson-three-task-five button[class|='secondary'] {
+  background: red;
+}
+
+.lesson-three-task-six li[class^='btn'],
+li[class^='button'] {
+  background: rgb(255, 255, 255);
+  color: green;
+}
+
+.lesson-three-task-seven li[class*='on'] {
+  background: rgb(255, 255, 255);
+  color: green;
+}
+
+.lesson-three-task-eight li[class*='on'] {
+  background: rgb(255, 255, 255);
+  color: blue;
+}
+
+.lesson-three-task-eight span[class$='s'] {
+  background: rgb(255, 255, 255);
+  color: blue;
+}
+
+.lesson-three-task-nine h2::first-letter {
+  color: red;
+}
+
+.lesson-three-task-ten p::first-line {
+  background: red;
+}
+
+.lesson-three-task-eleven input::placeholder {
+  background: red;
+}
+
+.lesson-three-task-twelve li::before {
+  content: '➤';
+}
+
+.lesson-three-task-thirteen li::after {
+  content: '➤';
+}
